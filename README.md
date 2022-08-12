@@ -1,2 +1,0 @@
-# SpyLetter
-Proyecto Encriptador
