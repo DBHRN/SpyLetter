@@ -1,0 +1,213 @@
+body{
+    background: #56575b;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: url(imagenes/header.png);
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position:relative;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    background: #ffffff;
+    border: 5px 
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px dashed #000000;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s all;
+}
+nav a:hover{
+    border-color:  #4590f7 ;
+    border-style: solid;
+    border: none;
+    font-size: 26px;
+    transform: rotate(25deg);
+    box-shadow: 10px 10px 30px #197a10;
+
+}
+main{
+    width:940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+    color: white;
+}
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    background:  #1d2020 ;
+    border-color:#4590f7;
+}
+
+::placeholder {
+     color: white; 
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background:  #56cdd1;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+.enviar:hover{
+    background:   #2c878a  ;
+    transform: scale(1.20);
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #000000;
+    color:#ffffff;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/footer.png);
+    padding: 40px;
+}
+
+.social {
+    display: flex;
+  }
+
+.link {
+              text-decoration: none;
+              color: #b7b7b7;
+              margin: 10px;
+              width: 50px;
+              height: 50px;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              background: rgb(28, 28, 28);
+              border-radius: 10px;
+              position: relative;
+              transition: 0.4s;
+          }
+          .link:hover {
+              transform: rotate(25deg);
+          }
+          .link::before {
+              content: " ";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              background: #373737;
+              border-radius: 10px;
+              transition: opasity 0.2s;
+          }
+          .link:hover::before {
+              opacity: 0.4;
+          }
+          .link:nth-child(1)::before {
+              background: #c32aa3;
+          }
+          .link:nth-child(2)::before {
+              background: #1da1f2;
+          }
+          .link:nth-child(3)::before {
+              background: #e42727;
+          }
+          .link:nth-child(4)::before {
+              background: #0a66c2;
+          }
+          .link:hover::before {
+              transform: translate(-4px, -4px);
+              filter: blur(10px);
+          }
+          .link i {
+              font-size: 1.7em;
+              transition: all 0.4s;
+          }
+          .link:hover i {
+              color: #c8c8c8;
+            transform: rotate(-25deg);
+          }
+          .link:hover i.instagram {
+              color: #c32aa3;
+          }
+          #insta{
+            width:50px;
+          }
+          .link:hover i.twitter {
+              color: #1da1f2;
+          }
+          #twitter{
+            width:50px;
+          }
+          .link:hover i.youtube {
+              color: #b41616;
+          }
+          #youtube{
+            width:50px;
+          }
+          .link:hover i.linkedin {
+              color: #0a66ca;
+          }
+          #linkedin{
+            width:50px;
+          }
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media(max-width: 480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, form label, form legend, form,.enviar,.input-padron{
+        font-size: 12px;
+        width: auto;
+    }
+    #mensaje{
+        width:20%;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    <head>
+        <meta charset = "UTF - 8">
+        <meta name="viewport" content="width = device-width">
+        <title>Contacto-Barberia Alura</title>
+        <link rel="stylesheet"  href="reset.css">
+        <link rel="stylesheet"  href="contacto_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img id="logo" src="imagenes/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                </div>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <label for="nombreapellido">Nombre y apellido</label>
+                    <input type:"text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type:"email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type:"tel" id="telefono" class="input-padron" required placeholder="(XX) XXX-XXX-XXXX">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend class="test" id="test">¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+                </fieldset>
+                <div>
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la SpyLetter?</label>
+
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <img src="imagenes/logo.png">
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/susy_diaz73/" class="link">
+                  <img class="fa-brands fa-instagram instagram"> <img id="insta" src="imagenes/insta.jpg"></i>
+              </a>
+              <a href="https://twitter.com/dbhrnf" class="link">
+                  <img class="fa-brands fa-twitter twitter"> <img id="twitter" src="imagenes/twitter.png"></img>
+              </a>
+              <a href="https://www.youtube.com/channel/UC0TDqzbyJ_4RWAOPCg_9isw/featured" class="link">
+                  <img class="fa-brands fa-youtube youtube"> <img id="youtube" src="imagenes/youtube.png"></img>
+              </a>
+              <a href="https://www.linkedin.com/in/susy-diaz/" class="link">
+                  <img class="fa-brands fa-linkedin linkedin"> <img id="linkedin" src="imagenes/linkedin.jpg"></img>
+              </a>
+                </div>
+            <p class="copyright">&copy Copyright SpyLetter - 2022</p>
+        </footer>
+    </body>
+
+</html>

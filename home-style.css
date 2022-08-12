@@ -1,0 +1,333 @@
+body{
+    background: #56575b;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: url(imagenes/header.png);
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position:relative;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    background: #ffffff;
+    border: 5px 
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px dashed #000000;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s all;
+}
+nav a:hover{
+    border-color:  #4590f7 ;
+    border-style: solid;
+    border: none;
+    font-size: 26px;
+    transform: rotate(25deg);
+    box-shadow: 10px 10px 30px #197a10;
+
+}
+
+.principal{
+    padding: 3em 0;
+    background:  #56575b;
+    width: 940px;
+    margin: 0 auto; 
+    color: #ffffff;
+}
+h2{
+    text-align: center;
+}
+.tituloprincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+}
+.tituloprincipal::first-letter{
+    font-weight: bold;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.espia{
+    width: 240px;
+    float:left;
+    margin: 0 20px 20px 0;
+    box-shadow: -10px 10px 30px #b1f0cb;
+}
+.encriptador{
+    background: linear-gradient( #56575b, #b0e4e6 ) ;
+}
+form{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto; 
+}
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px auto;
+    width: 940px;
+    color: white;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 80%;    
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.enviar:first-child{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background:  #76f746 ;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-right: 40px;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background:  #fdb2f9;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+#codigo:hover{
+    background:  #339c0b ;
+    transform: scale(1.20) rotate(-3deg);
+}
+
+#uncodigo:hover{
+    background: #fe76f6;
+    transform: scale(1.20) rotate(3deg);
+}
+
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+.resultado{
+    background: url(imagenes/fondoanimado.gif)no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+   
+}
+.resultado p{
+    background: #ffffff;
+    display: inline;
+    padding: 1em 0;
+    position: absolute;
+   margin-top: 25px;
+   box-shadow: -10px -10px 30px #000000;
+}
+.resultado-contenido{
+    display: inline-block;
+    width: 940px;
+    margin-top: 65px;
+    box-shadow: -10px 10px 30px #000000;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+}
+.copiar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background:   #cd6aff ;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    margin: 40px auto;
+}
+.copiar:hover{
+    background:#ae0efe;
+    transform: scale(1.20) rotate(3deg);
+    
+}
+.mensaje-copy{
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    visibility: hidden;
+    opacity: 0;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .6s;
+}
+.video{
+    width: 850px;
+    margin: 1em auto;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/footer.png);
+    padding: 40px;
+}
+
+.social {
+    display: flex;
+  }
+
+.link {
+              text-decoration: none;
+              color: #b7b7b7;
+              margin: 10px;
+              width: 50px;
+              height: 50px;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              background: rgb(28, 28, 28);
+              border-radius: 10px;
+              position: relative;
+              transition: 0.4s;
+          }
+          .link:hover {
+              transform: rotate(25deg);
+          }
+          .link::before {
+              content: " ";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              background: #373737;
+              border-radius: 10px;
+              transition: opasity 0.2s;
+          }
+          .link:hover::before {
+              opacity: 0.4;
+          }
+          .link:nth-child(1)::before {
+              background: #c32aa3;
+          }
+          .link:nth-child(2)::before {
+              background: #1da1f2;
+          }
+          .link:nth-child(3)::before {
+              background: #e42727;
+          }
+          .link:nth-child(4)::before {
+              background: #0a66c2;
+          }
+          .link:hover::before {
+              transform: translate(-4px, -4px);
+              filter: blur(10px);
+          }
+          .link i {
+              font-size: 1.7em;
+              transition: all 0.4s;
+          }
+          .link:hover i {
+              color: #c8c8c8;
+            transform: rotate(-25deg);
+          }
+          .link:hover i.instagram {
+              color: #c32aa3;
+          }
+          #insta{
+            width:50px;
+          }
+          .link:hover i.twitter {
+              color: #1da1f2;
+          }
+          #twitter{
+            width:50px;
+          }
+          .link:hover i.youtube {
+              color: #b41616;
+          }
+          #youtube{
+            width:50px;
+          }
+          .link:hover i.linkedin {
+              color: #0a66ca;
+          }
+          #linkedin{
+            width:50px;
+          }
+          
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+@media(max-width: 480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, form label, form legend,.fondo-resultado, .resultado , form, .video{
+        width: auto;
+    }
+    .espia{
+        margin: 30px auto;
+        width: 100%;
+        
+    }
+    
+    .resultado-contenido{
+        padding: 0;
+        width: 300px;
+        height:200
+    }
+
+}
